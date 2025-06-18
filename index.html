@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gianluca Nebunelea | Copywriter</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'), linear-gradient(to right, #000, #111);
+      animation: bgScroll 20s linear infinite;
+      background-size: 600px;
+      color: white;
+      overflow-x: hidden;
+    }
+    @keyframes bgScroll {
+      0% { background-position: 0 0; }
+      100% { background-position: 600px 0; }
+    }
+    nav {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      border-bottom: 1px solid #222;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #1db954;
+    }
+    header {
+      text-align: center;
+      padding: 6rem 1rem 3rem;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      font-weight: 600;
+      color: #1db954;
+    }
+    .intro, .work-section {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 3rem auto;
+      gap: 2rem;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    .intro-text, .work-text {
+      flex: 1;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      min-width: 280px;
+    }
+    .intro-img img, .work-img img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+    .work-section.reverse {
+      flex-direction: row-reverse;
+    }
+    .slider {
+      overflow: hidden;
+      max-width: 1000px;
+      margin: 3rem auto;
+      position: relative;
+    }
+    .slider-track {
+      display: flex;
+      animation: scroll 45s linear infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .review {
+      min-width: 400px;
+      max-width: 500px;
+      background: #1b1b1b;
+      margin: 0 1rem;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 10px #000;
+      flex-shrink: 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .cta button {
+      background-color: #1db954;
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .cta button:hover {
+      background-color: #17a84b;
+    }
+    .services-list {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+    }
+    .services-list ul {
+      list-style: square;
+      padding-left: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 2;
+      color: #ccc;
+    }
+    .single-service-block {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #000;
+      font-size: 1.1rem;
+      color: #eee;
+      text-align: center;
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #000;
+      border-top: 1px solid #222;
+      color: #bbb;
+    }
+    footer h2 {
+      margin-bottom: 1rem;
+      color: #1db954;
+    }
+    footer p {
+      margin: 0.3rem 0;
+    }
+    @media (max-width: 768px) {
+      .review {
+        min-width: 300px;
+        padding: 1.5rem;
+        font-size: 0.95rem;
+      }
+      .intro-img img, .work-img img {
+        width: 250px;
+        height: 250px;
+      }
+      .intro, .work-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .intro-text, .work-text {
+        min-width: auto;
+      }
+      .work-section.reverse {
+        flex-direction: column;
+      }
+      .work-img {
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="home">
+    <h1>Gianluca Nebunelea</h1>
+    <p>Professional Copywriter</p>
+  </header>
+
+  <section class="intro">
+    <div class="intro-text">
+      <h2>Chi sono</h2>
+      <p>Sono Gianluca, un copywriter professionista che trasforma parole in soldi. Creo testi che vendono, emozionano e spingono all'azione. Se hai un brand, io ho le parole giuste per farlo esplodere.</p>
+    </div>
+    <div class="intro-img">
+      <img src="your-photo1.jpg" alt="Foto professionale di Gianluca" />
+    </div>
+  </section>
+
+  <div class="slider">
+    <div class="slider-track">
+      <div class="review">"Insane copy. My sales exploded by 3x." – Marco, Ecom CEO</div>
+      <div class="review">"Gianluca gets results. Period." – Laura, Startup Founder</div>
+      <div class="review">"Best investment ever for my brand." – Luca, Clothing Line Owner</div>
+      <div class="review">"Words that convert like a god." – Davide, Funnel Hacker</div>
+      <div class="review">"Top G of copywriting, no cap." – Alex, Solo Entrepreneur</div>
+      <!-- Duplicate for infinite scroll -->
+      <div class="review">"Insane copy. My sales exploded by 3x." – Marco, Ecom CEO</div>
+      <div class="review">"Gianluca gets results. Period." – Laura, Startup Founder</div>
+      <div class="review">"Best investment ever for my brand." – Luca, Clothing Line Owner</div>
+      <div class="review">"Words that convert like a god." – Davide, Funnel Hacker</div>
+      <div class="review">"Top G of copywriting, no cap." – Alex, Solo Entrepreneur</div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <button>📞 Prenota una consulenza</button>
+  </div>
+
+  <section class="work-section reverse">
+    <div class="work-img">
+      <img src="your-photo2.jpg" alt="Foto mentre lavoro" />
+    </div>
+    <div class="work-text">
+      <h2>Come lavoro</h2>
+      <p>Studio il tuo target, capisco cosa vuole, creo testi su misura per il tuo brand. Ogni parola che scrivo è pensata per vendere. Nessuna frase buttata lì a caso. Ogni riga spinge all’azione.</p>
+      <div class="services-list" id="services">
+        <ul>
+          <li>Landing page ad alta conversione</li>
+          <li>Sales letter persuasive</li>
+          <li>Email marketing che vende</li>
+          <li>Copy per e-commerce e brand</li>
+          <li>Naming e slogan d’impatto</li>
+          <li>Strategia e posizionamento</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="slider">
+    <div class="slider-track">
+      <div class="review">"I cried reading my about page. He’s elite." – Giulia, Personal Brand</div>
+      <div class="review">"Was stuck. Now I print money." – Mattia, Dropshipper</div>
+      <div class="review">"This guy wrote ads that slapped hard." – Simone, Agency Owner</div>
+      <div class="review">"High-converting, clean, persuasive. Boom." – Andrea, SaaS Founder</div>
+      <div class="review">"If you don’t hire him, you’re dumb." – Gabriele, Satisfied Client</div>
+      <!-- Duplicate for infinite scroll -->
+      <div class="review">"I cried reading my about page. He’s elite." – Giulia, Personal Brand</div>
+      <div class="review">"Was stuck. Now I print money." – Mattia, Dropshipper</div>
+      <div class="review">"This guy wrote ads that slapped hard." – Simone, Agency Owner</div>
+      <div class="review">"High-converting, clean, persuasive. Boom." – Andrea, SaaS Founder</div>
+      <div class="review">"If you don’t hire him, you’re dumb." – Gabriele, Satisfied Client</div>
+    </div>
+  </div>
+
+  <section class="single-service-block">
+    <h2>I miei servizi</h2>
+    <p>Creo soluzioni su misura per ogni tipo di business: dalle startup affamate di risultati agli e-commerce che vogliono scalare. Il mio copy parla al cuore e al portafoglio. Raccontami chi sei, e ti mostrerò cosa possiamo fare insieme.</p>
+  </section>
+
+  <div class="cta">
+    <button>💥 Contattami per dominare il mercato.</button>
+  </div>
+
+  <footer id="contact">
+    <h2>Contatti</h2>
+    <p>📞 +39 333 1234567</p>
+    <p>📩 gianlucacopy@email.com</p>
+    <p>📷 Instagram: <strong>@gianlucacopy</strong></p>
+  </footer>
+
+</body>
+</html>
