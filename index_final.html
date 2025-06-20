@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gianluca Nebunelea | Copywriter</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'), linear-gradient(to right, #000, #111);
+      animation: bgScroll 20s linear infinite;
+      background-size: 600px;
+      color: white;
+      overflow-x: hidden;
+    }
+    @keyframes bgScroll {
+      0% { background-position: 0 0; }
+      100% { background-position: 600px 0; }
+    }
+    nav {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      border-bottom: 1px solid #222;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #1db954;
+    }
+    header {
+      text-align: center;
+      padding: 6rem 1rem 3rem;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      font-weight: 600;
+      color: #1db954;
+    }
+    .intro, .work-section {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 3rem auto;
+      gap: 2rem;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    .intro-text, .work-text {
+      flex: 1;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      min-width: 280px;
+    }
+    .intro-img img, .work-img img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+    .work-section.reverse {
+      flex-direction: row-reverse;
+    }
+    .slider {
+      overflow: hidden;
+      max-width: 1000px;
+      margin: 3rem auto;
+      position: relative;
+    }
+    .slider-track {
+      display: flex;
+      animation: scroll 45s linear infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .review {
+      min-width: 400px;
+      max-width: 500px;
+      background: #1b1b1b;
+      margin: 0 1rem;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 10px #000;
+      flex-shrink: 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .cta button {
+      background-color: #1db954;
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .cta button:hover {
+      background-color: #17a84b;
+    }
+    .services-list {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+    }
+    .services-list ul {
+      list-style: square;
+      padding-left: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 2;
+      color: #ccc;
+    }
+    .single-service-block {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #000;
+      font-size: 1.1rem;
+      color: #eee;
+      text-align: center;
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #000;
+      border-top: 1px solid #222;
+      color: #bbb;
+    }
+    footer h2 {
+      margin-bottom: 1rem;
+      color: #1db954;
+    }
+    footer p {
+      margin: 0.3rem 0;
+    }
+    @media (max-width: 768px) {
+      .review {
+        min-width: 300px;
+        padding: 1.5rem;
+        font-size: 0.95rem;
+      }
+      .intro-img img, .work-img img {
+        width: 250px;
+        height: 250px;
+      }
+      .intro, .work-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .intro-text, .work-text {
+        min-width: auto;
+      }
+      .work-section.reverse {
+        flex-direction: column;
+      }
+      .work-img {
+        margin-bottom: 1rem;
+      }
+    }
+  
+button, .cta a button {
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+button:hover, .cta a button:hover {
+  background-color: #17a84b;
+  box-shadow: 0 5px 15px rgba(0,255,100,0.3);
+  transform: translateY(-3px);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+</style>
+</head>
+<body>
+<!-- truncated for brevity -->
+</body>
+</html>
