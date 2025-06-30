@@ -5,20 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gianluca Nebunelea | Copywriter</title>
   <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
+    * {margin:0; padding:0; box-sizing:border-box;}
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'), linear-gradient(to right, #000, #111);
-      animation: bgScroll 20s linear infinite;
-      background-size: 600px;
+      background: linear-gradient(to right, #000000, #111111);
+      background-image: url('https://www.transparenttextures.com/patterns/black-carbon.png');
       color: white;
       overflow-x: hidden;
-    }
-    @keyframes bgScroll {
-      0% { background-position: 0 0; }
-      100% { background-position: 600px 0; }
     }
     nav {
       background: #000;
@@ -38,9 +31,7 @@
       text-transform: uppercase;
       transition: 0.3s;
     }
-    nav a:hover {
-      color: #1db954;
-    }
+    nav a:hover {color: #1db954;}
     header {
       text-align: center;
       padding: 6rem 1rem 3rem;
@@ -56,30 +47,34 @@
       font-weight: 600;
       color: #1db954;
     }
-    .intro, .work-section {
+    .intro {
       display: flex;
-      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
       max-width: 1200px;
       margin: 3rem auto;
-      gap: 2rem;
-      align-items: center;
       padding: 0 1rem;
+      flex-wrap: nowrap;
     }
-    .intro-text, .work-text {
-      flex: 1;
+    .intro-text {
+      flex: 1 1 60%;
       font-size: 1.2rem;
       line-height: 1.6;
       min-width: 280px;
     }
-    .intro-img img, .work-img img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
+    .intro-img {
+      flex: 1 1 40%;
+      display: flex;
+      justify-content: center;
+    }
+    .intro-img img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
       border-radius: 50%;
       box-shadow: 0 0 10px #000;
-    }
-    .work-section.reverse {
-      flex-direction: row-reverse;
+      display: block;
     }
     .slider {
       overflow: hidden;
@@ -92,8 +87,8 @@
       animation: scroll 40s linear infinite;
     }
     @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
+      0% {transform: translateX(0);}
+      100% {transform: translateX(-50%);}
     }
     .review {
       min-width: 400px;
@@ -123,8 +118,13 @@
       text-decoration: none;
       display: inline-block;
     }
-    .cta a:hover {
-      background-color: #17a84b;
+    .cta a:hover {background-color: #17a84b;}
+    .work-section {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      font-size: 1.2rem;
+      line-height: 1.6;
     }
     .services-list {
       max-width: 900px;
@@ -137,6 +137,14 @@
       font-size: 1.1rem;
       line-height: 2;
       color: #ccc;
+    }
+    .center-img {
+      display: block;
+      margin: 3rem auto;
+      max-width: 400px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #000;
     }
     .single-service-block {
       max-width: 1000px;
@@ -157,13 +165,7 @@
       border-top: 1px solid #222;
       color: #bbb;
     }
-    footer h2 {
-      margin-bottom: 1rem;
-      color: #1db954;
-    }
-    footer p {
-      margin: 0.3rem 0;
-    }
+    footer h2 {margin-bottom: 1rem; color: #1db954;}
     .luxury-cta {
       background: linear-gradient(90deg, #1db954, #17a84b);
       padding: 4rem 1rem;
@@ -173,7 +175,6 @@
       margin: 4rem auto;
       box-shadow: 0 8px 30px rgba(29,185,84,0.6);
       color: white;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .luxury-cta h2 {
       font-size: 3rem;
@@ -208,36 +209,14 @@
       transition: all 0.3s ease;
     }
     .luxury-cta a:last-child {
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255,255,255,0.2);
       color: white;
       font-weight: 700;
     }
-    .luxury-cta a:hover {
-      filter: brightness(1.1);
-    }
+    .luxury-cta a:hover {filter: brightness(1.1);}
     @media (max-width: 768px) {
-      .review {
-        min-width: 300px;
-        padding: 1.5rem;
-        font-size: 0.95rem;
-      }
-      .intro-img img, .work-img img {
-        width: 250px;
-        height: 250px;
-      }
-      .intro, .work-section {
-        flex-direction: column;
-        text-align: center;
-      }
-      .intro-text, .work-text {
-        min-width: auto;
-      }
-      .work-section.reverse {
-        flex-direction: column;
-      }
-      .work-img {
-        margin-bottom: 1rem;
-      }
+      .intro {flex-direction: column;}
+      .intro-img img {max-width: 250px;}
     }
   </style>
 </head>
@@ -262,7 +241,7 @@
         If you're looking for words that work, you're in the right place.</p>
     </div>
     <div class="intro-img">
-    <img src="https://raw.githubusercontent.com/gianlucanebunelea/Gianluca-copywriting/main/IMG_20250619_221620_277.jpg" alt="Gianluca senza PC" style="width:30%; height:auto; display:block;" />
+      <img src="https://raw.githubusercontent.com/gianlucanebunelea/Gianluca-copywriting/main/IMG_20250619_221620_277.jpg" alt="Gianluca senza PC" />
     </div>
   </section>
 
@@ -284,40 +263,34 @@
     <a href="https://calendar.app.google/Zeh7kfogSTMPdm2MA">📞 Book a free consultation</a>
   </div>
 
-  <section class="work-section reverse">
-    <div class="work-img">
-    </div>
-    <div class="work-text">
-      <h2>How I Work</h2>
-      <p>Every project starts with understanding. Before writing a single word, I take the time to dive deep into your brand, your audience's raw desires, your brand's DNA and the goals you want to crush. Whether you're launching a new product or sharpening your message to cut trough the noise, my approach is always strategic, sharp and tailored to your unique edge.</p>
-      <p>We begin with a short discovery phase, where I ask the right questions to fully grasp your positioning and what sets you apart and what makes you untouchable in the market. This is the foundation. Without it, your messaging is just noise. This is where the real clarity begins.
-      <p>Once I know your voice and objectives, I engineer copy that's wired to convert, i research draft, refine, and polish every sentence that reflects your values while resonating with your audience, while keeping you locked in the loop.</p>
-      <p>You'll receive clean, conversion-focused copy that's not just well-written, but built to perform.</p>
-      <p>Whether it's a landing page, sales letter, email sequence, or a full website — the goal is always the same: to help your business grow through words that actually work.</p>
-      <div class="services-list" id="services">
-        <ul>
-          <li>Landing page with high conversion</li>
-          <li>Persuasive newsletter</li>
-          <li>Email marketing that sells</li>
-          <li>Copy for e-commerce and brand</li>
-          <li>Strategy and positioning</li>
-        </ul>
-      </div>
-         <img src="https://raw.githubusercontent.com/gianlucanebunelea/Gianluca-copywriting/main/file_00000000efa461f4ba39fd6978c861c4.jpg" alt="Gianluca con PC" style="width:50%; height:auto; display:block;" />
-      </div>
-      <h2> The Goal never changes:
-        <p>Grow your business with words that work-period.
-        <p>Because mediocre copy is a death sentence in today's market.
-        <p>You need messages that grab attention, build trust instantly, and drive action like a sniper's bullet.
+  <section class="work-section">
+    <h2>How I Work</h2>
+    <p>Every project starts with understanding. Before writing a single word, I take the time to dive deep into your brand, your audience's raw desires, your brand's DNA and the goals you want to crush. Whether you're launching a new product or sharpening your message to cut through the noise, my approach is always strategic, sharp and tailored to your unique edge.</p>
+    <p>We begin with a short discovery phase, where I ask the right questions to fully grasp your positioning and what sets you apart and what makes you untouchable in the market. This is the foundation. Without it, your messaging is just noise. This is where the real clarity begins.</p>
+    <p>Once I know your voice and objectives, I engineer copy that's wired to convert. I research, draft, refine, and polish every sentence so it reflects your values while resonating with your audience — all while keeping you fully in the loop.</p>
+    <p>You'll receive clean, conversion-focused copy that's not just well-written, but built to perform.</p>
+
+    <img class="center-img" src="https://raw.githubusercontent.com/gianlucanebunelea/Gianluca-copywriting/main/file_00000000efa461f4ba39fd6978c861c4.jpg" alt="Gianluca con PC" />
+
+    <h2>The Goal never changes:</h2>
+    <p>Grow your business with words that work — period.</p>
+    <p>Because mediocre copy is a death sentence in today's market.</p>
+    <p>You need messages that grab attention, build trust instantly, and drive action like a sniper's bullet.</p>
+
+    <div class="services-list" id="services">
+      <ul>
+        <li>Landing page with high conversion</li>
+        <li>Persuasive newsletter</li>
+        <li>Email marketing that sells</li>
+        <li>Copy for e-commerce and brand</li>
+        <li>Strategy and positioning</li>
+      </ul>
     </div>
   </section>
 
   <section class="single-service-block">
     <h2>MY Services</h2>
-    <p>I provide a full range of copywriting solutions tailored to meet your unique business needs. Whether you're launching a startup, scaling an e-commerce brand, or building your personal image, my services are designed to deliver clear, compelling, and conversion-focused content that drives real results.
-    From website copy and landing pages to email campaigns and social media content, I craft words that not only capture attention but also build trust and motivate action. Every piece of copy I create is backed by strategic research and a deep understanding of your target audience, ensuring that your message resonates and cuts through the noise.
-    I specialize in persuasive storytelling, headline optimization, and call-to-action strategies that maximize engagement and sales. My process is collaborative and transparent, keeping you involved at every step to guarantee that the final output aligns perfectly with your brand voice and objectives.
-    Choosing my services means investing in quality content that elevates your brand, strengthens your connection with customers, and ultimately boosts your bottom line. Ready to turn your ideas into words that work? Let's make it happen.</p>
+    <p>I provide a full range of copywriting solutions tailored to meet your unique business needs. Whether you're launching a startup, scaling an e-commerce brand, or building your personal image, my services are designed to deliver clear, compelling, and conversion-focused content that drives real results. From website copy and landing pages to email campaigns and social media content, I craft words that not only capture attention but also build trust and motivate action. Every piece of copy I create is backed by strategic research and a deep understanding of your target audience, ensuring that your message resonates and cuts through the noise.</p>
   </section>
 
   <section class="luxury-cta">
@@ -337,3 +310,4 @@
 
 </body>
 </html>
+
