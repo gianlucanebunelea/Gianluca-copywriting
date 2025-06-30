@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gianluca Nebunelea | Copywriter</title>
   <style>
-    * {margin:0; padding:0; box-sizing:border-box;}
+    * {margin: 0; padding: 0; box-sizing: border-box;}
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #000, #111);
-      background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
-      background-size: auto;
+      background: linear-gradient(135deg, #0a0a0a 25%, #1a1a1a 25%, #1a1a1a 50%, #0a0a0a 50%, #0a0a0a 75%, #1a1a1a 75%, #1a1a1a);
+      background-size: 60px 60px;
+      animation: moveCarbon 8s linear infinite;
       color: white;
       overflow-x: hidden;
+    }
+    @keyframes moveCarbon {
+      0% { background-position: 0 0; }
+      100% { background-position: 60px 60px; }
     }
     nav {
       background: #000;
@@ -222,92 +226,6 @@
   </style>
 </head>
 <body>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <header id="home">
-    <h1>Gianluca Nebunelea</h1>
-    <p>Professional Copywriter</p>
-  </header>
-
-  <section class="intro">
-    <div class="intro-text">
-      <h2>Who I Am</h2>
-      <p>I'm Gianluca, a professional copywriter specialized in creating high-impact, persuasive content that drives results.
-        I help brands communicate their value clearly, connect with their audience, and increase conversions through strategic, well-crafted copy.
-        If you're looking for words that work, you're in the right place.</p>
-    </div>
-    <div class="intro-img">
-      <img src="https://raw.githubusercontent.com/gianlucanebunelea/Gianluca-copywriting/main/IMG_20250619_221620_277.jpg" alt="Gianluca senza PC" />
-    </div>
-  </section>
-
-  <div class="slider">
-    <div class="slider-track">
-      <div class="review">"Insane copy. My sales exploded by 3x." – Marco, Ecom CEO</div>
-      <div class="review">"Gianluca gets results." – Laura, Startup Founder</div>
-      <div class="review">"Best investment ever for my brand." – Luca, Clothing Brand Owner</div>
-      <div class="review">"Words that convert, helped me build my site and newsletter." – Davide, Personal Trainer</div>
-      <div class="review">"Great communication, thoughtful questions, and results that speak for themselves." – Sofia, Solo Entrepreneur</div>
-      <div class="review">"He combines strategy and creativity in a way that's rare." – Isabel C., Founder</div>
-      <div class="review">"Working with Gianluca was a smooth and professional experience." – Mike, Marketing Manager</div>
-      <div class="review">"The copy he delivered was exactly what we needed — clear, persuasive, and aligned with our brand voice." – Chiara G., Brand Consultant</div>
-      <div class="review">"A true professional. Polished writing, fast delivery, and copy that communicates real value." – Matteo V., Digital Strategist</div>
-    </div>
-  </div>
-
-  <div class="cta">
-    <a href="https://calendar.app.google/Zeh7kfogSTMPdm2MA">📞 Book a free consultation</a>
-  </div>
-
-  <section class="work-section">
-    <h2>How I Work</h2>
-    <p>Every project starts with understanding. Before writing a single word, I take the time to dive deep into your brand, your audience's raw desires, your brand's DNA and the goals you want to crush. Whether you're launching a new product or sharpening your message to cut through the noise, my approach is always strategic, sharp and tailored to your unique edge.</p>
-    <p>We begin with a short discovery phase, where I ask the right questions to fully grasp your positioning and what sets you apart and what makes you untouchable in the market. This is the foundation. Without it, your messaging is just noise. This is where the real clarity begins.</p>
-    <p>Once I know your voice and objectives, I engineer copy that's wired to convert. I research, draft, refine, and polish every sentence so it reflects your values while resonating with your audience — all while keeping you fully in the loop.</p>
-    <p>You'll receive clean, conversion-focused copy that's not just well-written, but built to perform.</p>
-
-    <img class="center-img" src="https://raw.githubusercontent.com/gianlucanebunelea/Gianluca-copywriting/main/file_00000000efa461f4ba39fd6978c861c4.jpg" alt="Gianluca con PC" />
-
-    <h2>The Goal never changes:</h2>
-    <p>Grow your business with words that work — period.</p>
-    <p>Because mediocre copy is a death sentence in today's market.</p>
-    <p>You need messages that grab attention, build trust instantly, and drive action like a sniper's bullet.</p>
-
-    <div class="services-list" id="services">
-      <ul>
-        <li>Landing page with high conversion</li>
-        <li>Persuasive newsletter</li>
-        <li>Email marketing that sells</li>
-        <li>Copy for e-commerce and brand</li>
-        <li>Strategy and positioning</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="single-service-block">
-    <h2>MY Services</h2>
-    <p>I provide a full range of copywriting solutions tailored to meet your unique business needs. Whether you're launching a startup, scaling an e-commerce brand, or building your personal image, my services are designed to deliver clear, compelling, and conversion-focused content that drives real results. From website copy and landing pages to email campaigns and social media content, I craft words that not only capture attention but also build trust and motivate action. Every piece of copy I create is backed by strategic research and a deep understanding of your target audience, ensuring that your message resonates and cuts through the noise.</p>
-  </section>
-
-  <section class="luxury-cta">
-    <h2>Ready to Crush Your Copy?</h2>
-    <p>Let's craft words that convert, build your brand, and blow up your sales. Don't settle for average — get the best.</p>
-    <div>
-      <a href="https://calendar.app.google/Zeh7kfogSTMPdm2MA">Book Your Free Consultation</a>
-      <a href="mailto:NebGianluca@outlook.com">Send Me a Message</a>
-    </div>
-  </section>
-
-  <footer id="contact">
-    <h2>Contacts</h2>
-    <p>📞 +39 327 102 7790</p>
-    <p>📩 NebGianluca@outlook.com</p>
-  </footer>
-
+  <!-- TUTTO IL TUO CONTENUTO QUI -->
 </body>
 </html>
